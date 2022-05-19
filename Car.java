@@ -1,4 +1,4 @@
-public abstract class Car implements ChangeSpeed {
+public abstract class Car implements ChangeSpeed, statusChecking {
     String num;
     int oil;
     int speed;
@@ -13,7 +13,11 @@ public abstract class Car implements ChangeSpeed {
 
 
     public void setOil(int oil) {
-        this.oil = oil;
+
+        this.oil += oil;
+//        if(this.oil < 10){
+//            System.out.println("주유 필요");
+//        }
     }
 
     @Override // 속도변경
