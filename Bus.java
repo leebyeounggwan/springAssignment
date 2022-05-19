@@ -8,7 +8,7 @@ public class Bus extends Transport {
     public Bus (String num, int oil, int speed, int charge, String status) {
         super(num,oil,speed,charge,status);
     }
-//super(UUID.randomUUID().toString(), 50, 50, 1250, "운행");
+
     public Bus() {
         this(UUID.randomUUID().toString(), 50, 50, 1250, "운행");
     }
